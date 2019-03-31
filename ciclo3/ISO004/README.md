@@ -42,4 +42,5 @@ No `shutdown -h now` todos os usuários recebem uma menagem primeiro, e então o
 ↪ sendo `-h` referente ao comando `halt`, que se usado sozinho, o sistema é desligado imediatamente.
 
 
-No `shutdown -r -t secs 1` o sistema é reiniciado depois de 
+No `shutdown -r -t secs 1` o sistema é reiniciado depois de X minutos.
+↪ sendo `-r` referente ao comando `reboot` que quando sozinho, é responsável por chamar o comando `shutdown`e ao final deste, reinicia o sistema.
