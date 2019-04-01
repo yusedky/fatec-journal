@@ -7,23 +7,29 @@ Para nossos estudos em sala de aula estamos usando o *Modo Texto* da **VM Conect
 
 
 
-## Lista de comandos aprendidos em sala.
 
-
-### Movendo-se através dos diretórios
+## Navegando pelo sistema
 
 `cd /` → direciona para o diretório raiz.
 
 `cd <nome do diretorio>` → para acessar um diretório especifico a partir do diretório raiz.
 
+`cd personagem/habilidades/magia` → segue o caminho designado.
+
 `cd ..` → volta um diretório (sendo que `qualquercomando ..` referece a um comandando dado a um diretório anterior).
 
 `cd -` → retorna a ultima navegação dos diretórios.
 
+`cd ~` → volta ao diretório nativo.
 
-### Mais usados
+
+
+
+## Mais usados
 `ls` (list) - Lista todos os arquivos do diretório ( [variações do comando](https://github.com/yusedky/fatec-journal/tree/master/ciclo3/ISO004#comando-ls) ).
 
+
+`tree`- Mostra toda s estrutura de árvore abaixo.
 
 `pwd` - Exibir o *path (caminho)* hierárquico de diretórios onde
 se encontra.
@@ -46,7 +52,7 @@ se encontra.
 
 
 
-### Maneiras de sair do LINUX
+## Maneiras de sair do LINUX
 
 Os modos seguros de sair do Sistema, estando an condição de Usuário de Grupo, são por meio dos comandos `logout`, `exit` ou `ctrl + D`.
 
@@ -66,7 +72,7 @@ No `shutdown -r -t secs 1` o sistema é reiniciado depois de X minutos.
 
 
 
-### Tipos de arquivos no ambiente
+## Tipos de arquivos no ambiente
 
 **carta.txt** → `.txt` para arquivos de texto.
 
@@ -81,7 +87,7 @@ hipertexto.
 
 
 
-### Comando ls
+## Comando ls
 O comando `ls` é bem simples mas pode conter diversas variações, tais como:
 
 * `ls .` para o diretório corrente. 
@@ -92,15 +98,15 @@ O comando `ls` é bem simples mas pode conter diversas variações, tais como:
 * `ls -F` para visualizar o tipo de arquivo entre simples (sem símbolo), deretórios ( / ), linkados ( @ ), etc... 
 * `ls <palavra escolhida>*` apresenta todos os arquivos que possuem a palavra escolhida.
 * `ls <palavra escolhida>?` apresenta arquivos substituindo um único caractér.
-* `ls batata[123]` gera uma lista em que cada arquivo se chamará *batata* possuindo como sufixo os caractéres dentro dos colchetes, ou seja *batata1*, *batata2* e *batata3*. 
-* `ls batata{1, 7, 13}`gera uma lista que cada arquivo se chamará *batata* e seus sufixos serão exatamente o que foi descriminado dentro da chaves e separado por vírgula.
+* `ls magia[123]` gera uma lista em que cada arquivo se chamará *magia* possuindo como sufixo os caractéres dentro dos colchetes, ou seja *magia1*, *magia2* e *magia3*. 
+* `ls magia{1, 7, 13}`gera uma lista que cada arquivo se chamará *magia* e seus sufixos serão exatamente o que foi descriminado dentro da chaves e separado por vírgula.
 * 
 
 
-### Criando do Zer0
+## Criando e Removendo do Zer0
 
 
-#### Criando arquivo vazio
+### Criando arquivo vazio
 
 Apenas o arquivo:
 
@@ -114,7 +120,7 @@ Arquivo com especificação da extensão do arquivo:
 [prompt]# touch <nome do arquivo>.<extensão>
 ```
 
-#### Criando e Removendo diretórios:
+### Criando diretórios (mkdir):
 
 Apenas o diretório:
 ```
@@ -126,7 +132,7 @@ Um caminho completo de diretórios:
 [prompt]# mkdir personagem/habilidades/magia
 ```
 
-Varios diretorios ao mesmo tempo dentro de um diretório:
+Varios diretórios ao mesmo tempo dentro de um diretório:
 ```
 [prompt]# mkdir magia1 magia2 magia3
 ```
@@ -136,4 +142,31 @@ Varios diretórios com o nome de *magia*, sendo que cada um tem o sufixo diferen
 [prompt]# mkdir magia{1, 2, 3} 
 ```
 
+### Removendo diretórios (rmdir):
+
+
+*Rm* de *Remove* remove o diretório em questão.
+```
+[prompt]# rmdir [parâmetros] nome_diretorio
+```
+
+Para remover uma estrutura de árvore inteira é necessário difitar todo o caminho
+```
+[prompt]# rmdir -p personagem/habilidades/magia
+```
+
+Remover varios arquivos com o mesmo prefixo
+```
+[prompt]# rmdir magia*
+```
+
+Remover varios arquivos com prefixos especificos
+```
+[prompt]# rmdir magia{1, 3}
+```
+
+Remover diretórios **com todos os arquivos dentro**! Use sabiamente ♥ (`-rf` vem de recursive first)
+```
+[prompt]#rm –rf nome_diretorio
+```
 
