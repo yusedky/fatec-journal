@@ -8,7 +8,7 @@ Para nossos estudos em sala de aula estamos usando o *Modo Texto* da **VM Conect
 
 
 
-## Navegando pelo sistema
+## Navegando pelo sistema :boat:
 
 `cd /` → direciona para o diretório raiz.
 
@@ -25,7 +25,7 @@ Para nossos estudos em sala de aula estamos usando o *Modo Texto* da **VM Conect
 
 
 
-## Mais usados
+## Mais usados :triangular_flag_on_post:
 `ls` (list) - Lista todos os arquivos do diretório ( [variações do comando](https://github.com/yusedky/fatec-journal/tree/master/ciclo3/ISO004#comando-ls) ).
 
 
@@ -52,7 +52,7 @@ se encontra.
 
 
 
-## Maneiras de sair do LINUX
+## Maneiras de sair do LINUX :door:
 
 Os modos seguros de sair do Sistema, estando an condição de Usuário de Grupo, são por meio dos comandos `logout`, `exit` ou `ctrl + D`.
 
@@ -72,7 +72,7 @@ No `shutdown -r -t secs 1` o sistema é reiniciado depois de X minutos.
 
 
 
-## Tipos de arquivos no ambiente
+## Tipos de arquivos no ambiente 
 
 **carta.txt** → `.txt` para arquivos de texto.
 
@@ -100,13 +100,12 @@ O comando `ls` é bem simples mas pode conter diversas variações, tais como:
 * `ls <palavra escolhida>?` apresenta arquivos substituindo um único caractér.
 * `ls magia[123]` gera uma lista em que cada arquivo se chamará *magia* possuindo como sufixo os caractéres dentro dos colchetes, ou seja *magia1*, *magia2* e *magia3*. 
 * `ls magia{1, 7, 13}`gera uma lista que cada arquivo se chamará *magia* e seus sufixos serão exatamente o que foi descriminado dentro da chaves e separado por vírgula.
-* 
 
 
 ## Criando e Removendo do Zer0
 
 
-### Criando arquivo vazio
+### Criando arquivo vazio :page_facing_up:
 
 Apenas o arquivo:
 
@@ -120,7 +119,7 @@ Arquivo com especificação da extensão do arquivo:
 [prompt]# touch <nome do arquivo>.<extensão>
 ```
 
-### Criando diretórios (mkdir):
+### Criando diretórios (mkdir) :open_file_folder:
 
 Apenas o diretório:
 ```
@@ -142,7 +141,7 @@ Varios diretórios com o nome de *magia*, sendo que cada um tem o sufixo diferen
 [prompt]# mkdir magia{1, 2, 3} 
 ```
 
-### Removendo diretórios (rmdir):
+### Removendo diretórios (rmdir) :open_file_folder:
 
 
 *Rm* de *Remove* remove o diretório em questão.
@@ -150,22 +149,22 @@ Varios diretórios com o nome de *magia*, sendo que cada um tem o sufixo diferen
 [prompt]# rmdir [parâmetros] nome_diretorio
 ```
 
-Para remover uma estrutura de árvore inteira é necessário difitar todo o caminho
+Para remover uma estrutura de árvore inteira é necessário difitar todo o caminho.
 ```
 [prompt]# rmdir -p personagem/habilidades/magia
 ```
 
-Remover varios arquivos com o mesmo prefixo
+Remover varios arquivos com o mesmo prefixo.
 ```
 [prompt]# rmdir magia*
 ```
 
-Remover varios arquivos com prefixos especificos
+Remover varios arquivos com prefixos especificos.
 ```
 [prompt]# rmdir magia{1, 3}
 ```
 
-Remover diretórios **com todos os arquivos dentro**! Use sabiamente ♥ (`-rf` vem de recursive first)
+Remover diretórios **com todos os arquivos dentro**! Use sabiamente ♥ (`-rf` vem de recursive first).
 ```
 [prompt]#rm –rf nome_diretorio
 ```
