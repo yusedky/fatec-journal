@@ -22,9 +22,7 @@ Para nossos estudos em sala de aula estamos usando o *Modo Texto* da **VM Conect
 
 
 ### Mais usados
-`ls` (list) - Lista todos os arquivos do diretório.
-
-↪  sendo as variações: `ls .` para o diretório corrente; `ls ..` para conteúdo do diretório anterior; `ls ~` para diretórios disponíveis para o usuário trabalhar.
+`ls` (list) - Lista todos os arquivos do diretório ( [variações do comando](https://github.com/yusedky/fatec-journal/tree/master/ciclo3/ISO004#comando-ls) ).
 
 
 `pwd` - Exibir o *path (caminho)* hierárquico de diretórios onde
@@ -80,4 +78,62 @@ No `shutdown -r -t secs 1` o sistema é reiniciado depois de X minutos.
 
 **index.aspl** → `.aspl` para página de internet no formato
 hipertexto.
+
+
+
+### Comando ls
+O comando `ls` é bem simples mas pode conter diversas variações, tais como:
+
+* `ls .` para o diretório corrente. 
+* `ls ..` para conteúdo do diretório anterior.
+* `ls ~` para diretórios disponíveis para o usuário trabalhar.
+* `ls -l` para listar os arquivos pelo formato longo.
+* `ls -a` para visualizar todos os arquivos inclusive os ocultos.
+* `ls -F` para visualizar o tipo de arquivo entre simples (sem símbolo), deretórios ( / ), linkados ( @ ), etc... 
+* `ls <palavra escolhida>*` apresenta todos os arquivos que possuem a palavra escolhida.
+* `ls <palavra escolhida>?` apresenta arquivos substituindo um único caractér.
+* `ls batata[123]` gera uma lista em que cada arquivo se chamará *batata* possuindo como sufixo os caractéres dentro dos colchetes, ou seja *batata1*, *batata2* e *batata3*. 
+* `ls batata{1, 7, 13}`gera uma lista que cada arquivo se chamará *batata* e seus sufixos serão exatamente o que foi descriminado dentro da chaves e separado por vírgula.
+* 
+
+
+### Criando do Zer0
+
+
+#### Criando arquivo vazio
+
+Apenas o arquivo:
+
+```
+[prompt]# touch <nome do arquivo>
+```
+
+Arquivo com especificação da extensão do arquivo:
+
+```
+[prompt]# touch <nome do arquivo>.<extensão>
+```
+
+#### Criando e Removendo diretórios:
+
+Apenas o diretório:
+```
+[prompt]# mkdir <nome do diretório>
+```
+
+Um caminho completo de diretórios:
+```
+[prompt]# mkdir personagem/habilidades/magia
+```
+
+Varios diretorios ao mesmo tempo dentro de um diretório:
+```
+[prompt]# mkdir magia1 magia2 magia3
+```
+
+Varios diretórios com o nome de *magia*, sendo que cada um tem o sufixo diferente de acordo com as *{ }*:
+```
+[prompt]# mkdir magia{1, 2, 3} 
+```
+
 
