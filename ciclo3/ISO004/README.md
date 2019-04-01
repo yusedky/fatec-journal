@@ -56,7 +56,7 @@ Os modos seguros de sair do Sistema, estando an condição de Usuário de Grupo,
 
 `shutdown` que agenda um tempo para o sistema ser desligado. Ele pode ser utilizado para travar, desligar ou reiniciar a máquina.
 
-No `shutdown -h now` todos os usuários recebem uma menagem primeiro, e então o sistema será desligado (podendo estipular um tempo para que ele desligue como no caso do `shutdown -h -t secs 1`).
+No `shutdown -h now` todos os usuários recebem uma mensagem primeiro, e então o sistema será desligado (podendo estipular um tempo para que ele desligue como no caso do `shutdown -h -t secs 1`).
 
 ↪ sendo `-h` referente ao comando `halt`, que se usado sozinho, o sistema é desligado imediatamente.
 
