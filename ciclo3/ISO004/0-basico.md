@@ -1,11 +1,3 @@
-# ISO004 - Servidores e seus Sistemas Operacionais
-Para nossos estudos em sala de aula estamos usando o *Modo Texto* da **VM Conectiva Linux**.
-
-### Links úteis para estudo:
-
-• [Lista de comandos importantes do Linux - DevMedia](https://www.devmedia.com.br/comandos-importantes-linux/23893);
-
-
 
 ## Mais usados :triangular_flag_on_post:
 `ls` (list) - Lista todos os arquivos do diretório ( [variações do comando](https://github.com/yusedky/fatec-journal/tree/master/ciclo3/ISO004#comando-ls) ).
