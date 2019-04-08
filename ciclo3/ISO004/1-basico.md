@@ -1,6 +1,5 @@
-
 ## Mais usados :triangular_flag_on_post:
-`ls` (list) - Lista todos os arquivos do diretório ( [variações do comando](https://github.com/yusedky/fatec-journal/tree/master/ciclo3/ISO004#comando-ls) ).
+`ls` (list) - Lista todos os arquivos do diretório ( [variações do comando](https://github.com/yusedky/fatec-journal/tree/master/ciclo3/ISO004/#comando-ls) ).
 
 
 `tree`- Mostra toda s estrutura de árvore abaixo.
